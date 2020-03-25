@@ -1,0 +1,246 @@
+        /*
+        CSS
+        Cascading Style Sheet
+        
+        Everything in CSS are BOXES (containers) with more boxes inside or contet
+
+        CSS is order sensitive
+        */
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #E5E5E5;
+            color: #25282B;
+            text-align: justify;
+            margin: 0;
+        }
+
+        a {
+            color: #FF5A46;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p, .description {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1;
+        }
+
+        #container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            display: flex;
+        }
+
+        #intro {
+            width: 480px;
+            margin-right: 20px;
+        }
+
+        main {
+            margin: 32px 0;
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 32px;
+        }
+
+        button {
+            background: none;
+            border: none;
+            font-weight: bold;
+            color:  #FF5A46;
+            cursor: pointer;
+            outline: none;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+        }
+
+        button:hover {
+            text-decoration: underline;
+        }
+
+        button.fat {
+            color: white;
+            background: #FF5A46;
+            width: 150px;
+            height: 54px;
+            border-radius: 10px;
+            box-shadow: 4px 7px 16px rgba(255, 0, 92, 0.36);
+
+        }
+
+        button.fat:hover {
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            font-weight: regular;
+            color: #777;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+        }
+
+        footer a {
+            opacity: 0.7;
+        }
+
+        .idea {
+            display: flex;
+            margin-bottom: 20px;
+            background-color: #FFF;
+            border-radius: 20px;
+            padding: 32px;
+            box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
+        }
+
+        .idea img {
+            width: 60px;
+            height: 60px;
+            margin-right: 32px;
+
+        }
+
+        .idea h3 {
+            margin: 0;
+        }
+
+        .idea p {
+            margin: 8px 0;
+            color: #777;
+        }
+
+        .idea .description {
+            margin: 16px 0;
+        }
+
+        /* modal */
+
+        #modal {
+            background-color: #FF5A46;
+            position: absolute;
+            top: 0;
+
+            width: 100vw;
+            height: 110vh;
+
+            display: flex;
+            justify-content: center;
+
+            transition: 400ms;
+        }
+
+        #modal .content {
+            margin-top: 128px;
+            color: white;
+        }
+
+        #modal .content h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        #modal form {
+            max-width: 1000px;
+            width: 80%;
+            margin: 0 auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* fr = fraction */
+            gap: 20px; 
+
+            text-align: left;
+        }
+
+        .content form div:nth-child(3),
+        .content form div:nth-child(4), 
+        .content form div:nth-child(5) {
+        grid-column: span 2;  /* Expand to the second column for children 3, 4 and 5 (the effect will only happen on div 0 and 1) */
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box; /* Prevent content to extrapolate the box */
+            border-radius: 6px;
+            border: 1px solid rgba(141, 25, 52, 0.5);
+            outline: none;
+            font-size: 16px;
+        }
+
+        form label {
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 0.8px;
+        }
+
+        form a {
+            width: 150px;
+            height: 40px;
+
+            background-color: #FFFFFF22;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 6px;
+
+            font-size: 14px;
+            font-weight: bold;
+
+            align-self: end; /* Applied to the grid */
+
+            transition: 400ms;
+        }
+
+        form a:hover {
+            background: #FFF;
+            color: #FF5A46;
+
+            text-decoration: none;
+        }
+
+        form button {
+            background-color: white;
+            width: 150px;
+            height: 40px;
+            border-radius: 6px;
+            margin-top: 32px;
+
+            grid-column: 2; /* Send button to the second column */
+            justify-self: end; /* Justify button to the right side */
+
+            transition: 400ms;
+        }
+
+        form button:hover {
+            background-color: #0984E3;
+            color: white;
+            text-decoration: none;
+        }
+
+        #modal.hide {
+            opacity: 0;
+            visibility: hidden; /* Use this combination to apply transition. Display don't work with transition. */
+        }
+
+        
+
+        
+        
+
+        

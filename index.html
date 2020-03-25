@@ -1,0 +1,149 @@
+<!DOCTYPE html> <!-- Tag HTML -->
+<!--
+    HTML
+
+    HyperText
+    Texts that accept links and audio visual elements
+
+    Markup
+    Marks done with <tags>
+
+    Language
+    Programming language
+-->
+
+<html lang="en">
+
+<head>
+    <!-- Responsible to receive the page configurations -->
+    <meta charset="UTF-8">
+    <title>Creative Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <section id="intro">
+
+            <header>
+                <img src="logo.png" alt="Main Logo Image"> <!-- Image is in the root -->
+            </header>
+
+            <main>
+                <p>
+                    To stay at home for a long period is not an easy task, as it may look like. But in hard times like
+                    this, where the best tool we have to fight against the COVID-19 is to isolate ourselves, it is
+                    necessary.
+                </p>
+                <p>
+                    Thinking about that, I made a platform to catalog <strong>ideas, games, movies, courses, books,
+                    tips</strong> and anything else that may help you to get through this hard time, in the most
+                    fun, productive and interesting way.
+                </p>
+                <p>
+                    You may start by clicking on see ideas to see ideas submitted and you can submit your own idea to
+                    help the community.
+                </p>
+            </main>
+
+            <section id="buttons">
+                <button onclick="onOff()">+ Add Idea</button>
+                <button class="fat">See Ideas</button>
+            </section>
+
+            <footer>
+                With ❤️ <a href="http://google.com">PirProductions</a>
+            </footer>
+
+        </section>
+
+        <section id="last-ideas">
+
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Programming Course Icon">
+                <div class="content">
+                    <h3>Programming Courses</h3>
+                    <p>Study</p>
+                    <div class="description">
+                        Lorem ipsum
+                    </div>
+                    <a href="#">Go to the idea</a>
+                </div>
+            </div>
+
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" alt="Exercice Icon">
+                <div class="content">
+                    <h3>Exercices</h3>
+                    <p>Health</p>
+                    <div class="description">
+                        Lorem ipsum
+                    </div>
+                    <a href="#">Go to the idea</a>
+                </div>
+            </div>
+
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" alt="Meditation Icon">
+                <div class="content">
+                    <h3>Meditation</h3>
+                    <p>Mind</p>
+                    <div class="description">
+                        Lorem ipsum
+                    </div>
+                    <a href="#">Go to the idea</a>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="hide">
+        <div class="content">
+            <h1>New Idea</h1>
+
+            <form action="">
+
+                <div class="input-wrapper">
+                    <label for="title">Idea title</label>
+                    <input type="text" name="title">
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="categoy">Category</label>
+                    <input type="text" name="categoy">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="image">Image link</label>
+                    <input type="url" name="image">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="description">Type a description for your ideia</label>
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="link">Idea link</label>
+                    <input type="url" name="link">
+                </div>
+
+                <a href="#" onclick="onOff()">Back</a>
+                <button>Save</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
