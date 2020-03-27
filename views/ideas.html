@@ -1,0 +1,40 @@
+
+{% extends 'layout.html' %}
+
+{% set bodyId = 'page-ideas' %}
+    
+{% block title %}
+    <title>Ideas - Creative Home</title>
+{% endblock %}
+
+{% block content %}
+
+    <header>
+        <a href="/">
+            <img src="/logo.png" alt="Main Logo Image">
+        </a>
+        
+        <nav>
+            <li><a href="/">Home</a></li>
+            <li><a class="button" href="#" onclick="onOff()">New Idea</a></li>
+        </nav>
+    </header>
+
+    <section id="title">
+        <p>in exhibition</p>
+        <h1>Ideas</h1>
+    </section>
+
+    <main>
+        <section id="ideas">
+
+            {% include 'all_ideas.html' %}
+
+        </section>
+    </main>
+
+    <footer>
+        With ❤️ <a href="http://google.com" target="_blank">PirProductions</a>
+    </footer>
+
+{% endblock %}

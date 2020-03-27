@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- Tag HTML -->
+<html lang="en">
+<!--
+    HTML
+
+    HyperText
+    Texts that accept links and audio visual elements
+
+    Markup
+    Marks done with <tags>
+
+    Language
+    Programming language
+-->
+
+<html lang="en">
+
+<head>
+    <!-- Responsible to receive the page configurations -->
+    <meta charset="UTF-8">
+
+    {% block title %}
+        <title>Creative Home</title>
+    {% endblock %}
+    
+    {% include 'head_links.html' %}
+</head>
+
+<body id='{{ bodyId }}'>
+    <!-- <h1>{{title}}</h1> --> <!-- This is how you use variables inside HTML using nunjucks -->
+
+    <div id="container">
+
+       {% block content %}
+       {% endblock %}
+
+    </div>
+
+    <!-- Nunjuck will get the code "modal" from the views directory and insert it here -->
+    {% include 'modal.html' %} 
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "StayHome",
+  "version": "1.0.0",
+  "description": "Project developed during the WorkshopDev from RocketSeat. This project is a web app that helps people to share ideas on how to spend time at home during the COVID-19 quarentine.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "quarentine",
+    "workshopdev",
+    "stayhome",
+    "rocketseat",
+    "omnistack"
+  ],
+  "author": "Pedro Afonso",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

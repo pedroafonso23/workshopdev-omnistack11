@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <section id="intro">
+
+    <header>
+        <a href="/">
+            <img src="/logo.png" alt="Main Logo Image"> <!-- Image is in the root -->
+        </a> 
+    </header>
+
+    <main>
+        <p>
+            To stay at home for a long period is not an easy task, as it may look like. But in hard times like
+            this, where the best tool we have to fight against the COVID-19 is to isolate ourselves, it is
+            necessary.
+        </p>
+        <p>
+            Thinking about that, I made a platform to catalog <strong>ideas, games, movies, courses, books,
+            tips</strong> and anything else that may help you to get through this hard time, in the most
+            fun, productive and interesting way.
+        </p>
+        <p>
+            You may start by clicking on see ideas to see ideas submitted and you can submit your own idea to
+            help the community.
+        </p>
+    </main>
+
+    <section id="buttons">
+        <button onclick="onOff()">+ Add Idea</button>
+        <a href="/ideas" class="button">See Ideas</a>
+    </section>
+
+    <footer>
+        With ❤️ <a href="http://google.com" target="_blank">PirProductions</a>
+    </footer>
+
+    </section>
+
+    <section id="last-ideas">
+
+    {% include 'all_ideas.html' %} 
+
+    </section>
+
+{% endblock %}
