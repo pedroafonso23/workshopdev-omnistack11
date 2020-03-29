@@ -7,4 +7,4 @@ In this project, we built a web application that helps people during the COVID-1
 
 The user can access the website and post a new suggestion. Suggestion cards will be available for anyone to see.
 
-For this project we used JavaScript, HTML, CSS, databases and other tools. 
+For this project we used JavaScript, HTML, CSS, databases and other tools, like the Express FrameWork. 
